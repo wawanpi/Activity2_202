@@ -25,4 +25,34 @@ int main()
         cout << "4. Exit" << endl;
         cin >> pilihan;
 
+        switch (pilihan)
+        {
+        case 1:
+            cout << "Masukan Panjang = ";
+            cin >> panjang;
+            cout << "Masukan Lebar = ";
+            cin >> lebar;
+            cout << "Luas Petsegi Panjang = " << LuasPersegi(panjang, lebar);
+            break;
+        case 2:
+            cout << "Masukan Alas =";
+            cin >> jejari;
+            cout << "Luas Lingkaran = " << LuasLingkaran(jejari);
+            break;
+        case 3:
+            cout << "Masukan Alas = ";
+            cin >> alas;
+            cout << "Masukan Tinggi =";
+            cin >> tinggi;
+            cout << "Luas Segitiga = " << LuasSegitiga(alas, tinggi);
+            break;
+        case 4:
+            break;
+        default:
+            cout << "PILIHAN SALAH" << endl;
+            break;
+        }
+    } while (pilihan != 4);
+}
+
 
