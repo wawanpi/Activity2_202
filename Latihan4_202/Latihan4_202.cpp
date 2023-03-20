@@ -23,6 +23,7 @@ int main()
         cout << "2. Luas Lingkaran " << endl;
         cout << "3. Luas Segitiga " << endl;
         cout << "4. Exit" << endl;
+        cout << "Pilihan(1/2/3/4): ";
         cin >> pilihan;
 
         switch (pilihan)
